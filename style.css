@@ -58,14 +58,14 @@ section { padding: 80px 0; }
     border: none;
 }
 
-/* 8. Button Hover Animation */
+
 .btn:hover {
     transform: translateY(-3px);
-    background-color: #4b2cde; /* Darker shade for hover */
+    background-color: #4b2cde; 
 }
 
 
-/* --- 1. Navbar Section --- */
+
 .navbar {
     padding: 20px 0;
     background-color: var(--bg-light);
@@ -82,10 +82,10 @@ section { padding: 80px 0; }
     text-decoration: none;
 }
 
-/* --- 2. Banner Section --- */
+
 .banner {
     background-color: var(--bg-light);
-    /* For the pattern, use a subtle background image */
+
     background-image: url('assets/Hero-bg.png');
     padding: 100px 0;
 }
@@ -94,18 +94,18 @@ section { padding: 80px 0; }
     margin: 0 auto 30px auto;
 }
 
-/* --- 3. Action Section --- */
+
 .action-image img {
     width: 100%;
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* --- 4. Productive Users Section --- */
+
 .productive-users {
     background-color: var(--bg-light);
     .stats-container {
-  background-color: #CBC3E3; /* Light purple background, approximate to image */
+  background-color: #CBC3E3; 
   padding: 40px;
   border-radius: 15px;
   text-align: center;
@@ -123,19 +123,19 @@ section { padding: 80px 0; }
 .stats-grid {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
-  gap: 20px; /* Space between stat items */
+  flex-wrap: wrap; 
+  gap: 20px; 
 }
 
 .stat-item {
-  flex: 1; /* Allows items to grow and shrink */
-  min-width: 180px; /* Minimum width for each stat item */
+  flex: 1; 
+  min-width: 180px; 
 }
 
 .stat-value {
   font-size: 3em;
   font-weight: bold;
-  color: #6350df; /* Purple color, approximate to image */
+  color: #6350df;
   margin-bottom: 5px;
 }
 
@@ -162,7 +162,7 @@ section { padding: 80px 0; }
     color: var(--light-text);
 }
 
-/* --- 7. Users' Feedback Section --- */
+
 .reviews-section h2 {
     margin-bottom: 50px;
 }
@@ -208,7 +208,7 @@ section { padding: 80px 0; }
 }
 
 
-/* --- 5. Let’s Get In Touch Section --- */
+
 .contact-section {
     background-color: var(--bg-light);
 }
@@ -227,7 +227,7 @@ section { padding: 80px 0; }
     margin-bottom: 20px;
     border-radius: var(--border-radius);
     border: 1px solid #ddd;
-    box-sizing: border-box; /* Important for padding */
+    box-sizing: border-box; 
 }
 .contact-form textarea {
     resize: vertical;
@@ -238,7 +238,7 @@ section { padding: 80px 0; }
     font-size: 1.1rem;
 }
 
-/* --- 6. Footer Section --- */
+
 .footer-section {
     background-color: var(--bg-white);
     padding: 60px 0;
@@ -263,7 +263,7 @@ section { padding: 80px 0; }
     color: var(--primary-color);
 }
 
-/* --- Responsive Design for Smaller Screens --- */
+
 @media (max-width: 768px) {
     h1 { font-size: 2.5rem; }
     h2 { font-size: 2rem; }
