@@ -1,0 +1,275 @@
+/* --- General & Global Styles --- */
+:root {
+    --primary-color: #5d3eff;
+    --dark-text: #2c3e50;
+    --light-text: #555;
+    --bg-light: #f7f7f9;
+    --bg-white: #ffffff;
+    --bg-dark: #76b2ef;
+    --border-radius: 8px;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    color: var(--dark-text);
+    background-color: var(--bg-white);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    margin-top: 0;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+p { color: var(--light-text); }
+section { padding: 80px 0; }
+.text-center { text-align: center; }
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* --- Button Styles & Animation --- */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+}
+
+/* 8. Button Hover Animation */
+.btn:hover {
+    transform: translateY(-3px);
+    background-color: #4b2cde; /* Darker shade for hover */
+}
+
+
+/* --- 1. Navbar Section --- */
+.navbar {
+    padding: 20px 0;
+    background-color: var(--bg-light);
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* --- 2. Banner Section --- */
+.banner {
+    background-color: var(--bg-light);
+    /* For the pattern, use a subtle background image */
+    background-image: url('assets/Hero-bg.png');
+    padding: 100px 0;
+}
+.banner h1 {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+/* --- 3. Action Section --- */
+.action-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* --- 4. Productive Users Section --- */
+.productive-users {
+    background-color: var(--bg-light);
+    .stats-container {
+  background-color: #CBC3E3; /* Light purple background, approximate to image */
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  max-width: 800px;
+  margin: 50px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stats-container h2 {
+  font-size: 1.8em;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
+  gap: 20px; /* Space between stat items */
+}
+
+.stat-item {
+  flex: 1; /* Allows items to grow and shrink */
+  min-width: 180px; /* Minimum width for each stat item */
+}
+
+.stat-value {
+  font-size: 3em;
+  font-weight: bold;
+  color: #6350df; /* Purple color, approximate to image */
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 1em;
+  color: #555;
+}
+}
+.productive-users h2 {
+    margin-bottom: 50px;
+}
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.stat-number {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    display: block;
+}
+.stat-label {
+    color: var(--light-text);
+}
+
+/* --- 7. Users' Feedback Section --- */
+.reviews-section h2 {
+    margin-bottom: 50px;
+}
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.review-card {
+    background: var(--bg-white);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    text-align: left;
+}
+.review-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.stars {
+    color: #f39c12;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.reviewer-info img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.reviewer-name {
+    display: block;
+    font-weight: 600;
+}
+.review-date {
+    font-size: 0.9em;
+    color: #999;
+}
+
+
+/* --- 5. Let’s Get In Touch Section --- */
+.contact-section {
+    background-color: var(--bg-light);
+}
+.contact-text h2 {
+    font-size: 3.5rem;
+}
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: var(--border-radius);
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Important for padding */
+}
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+.contact-form button {
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+/* --- 6. Footer Section --- */
+.footer-section {
+    background-color: var(--bg-white);
+    padding: 60px 0;
+}
+.logo-footer {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.footer-section p {
+    max-width: 500px;
+    margin: 20px auto;
+}
+.footer-nav a {
+    color: var(--light-text);
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+.footer-nav a:hover {
+    color: var(--primary-color);
+}
+
+/* --- Responsive Design for Smaller Screens --- */
+@media (max-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    .grid-2 { grid-template-columns: 1fr; }
+    .reviews-grid { grid-template-columns: 1fr; }
+    .stats-container { flex-direction: column; gap: 40px; }
+    .contact-text { text-align: center; }
+    .action-text { text-align: center; }
+}
